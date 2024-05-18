@@ -1,0 +1,13 @@
+#USERS TABLE
+
+admins:
+
+1001, 'zaid@email.com', sha1('123'), 1
+1002,'jarif@email.com', sha1('456'), 1
+1003, 'abrar@email.com', sha1('111'), 1
+
+users:
+
+2001, 'mirza@email.com', sha1('abcd'), 0
+2002, 'maisha@email.com', sha1('messi'), 0
+2003, 'nafew@email.com', sha1('cr7'), 0

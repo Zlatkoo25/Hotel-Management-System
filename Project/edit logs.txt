@@ -1,0 +1,18 @@
+change in database.
+
+booking table will not have b_from and b_to anymore.
+it will be moved to booked table.
+
+
+tried to move the booking_no generator at the bookingpage.php
+currently the clear booking function is not working.
+check the delete query for bookings in the clear bookings logic in booking3.php
+
+
+booking_number stuck at being mysqli_result type.
+Need to somehow get a string or integer out of it.
+if fixed need to check other places for it.
+right now just concerned with bookingpage.php and
+finalizebooking.php
+
+

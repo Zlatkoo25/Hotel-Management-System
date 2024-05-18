@@ -1,0 +1,21 @@
+1) Home page (include Login page redirect)
+
+2) Login page (include LogOut functionality on every page)
+
+for users:
+i) Booking  (see the screenshot for more info)
+
+ii) Receipt/Booking Summary
+
+for admins:
+
+(the functionalities below to be shown in
+a single landing page with navigation bar)
+
+i) Rooms Booked
+
+ii) Rooms list
+
+iii) Bookings list
+
+iv) Registered Users(without showing password)
