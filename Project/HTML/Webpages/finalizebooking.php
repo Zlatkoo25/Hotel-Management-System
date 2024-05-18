@@ -69,11 +69,16 @@
 
     <a href="bookingpage.php" class="button">Add Another</a>
 
-
+    <?php 
+    if(!empty($_SESSION['room_bookings'])){
+    ?>
     <form action="thankYou.php" method="POST">
         <button type="submit" name="finalize_booking" class="button" style="height: 100px; background-color:brown"
         >Confirm</button>
     </form>
+    <?php
+    }
+    ?>
 
 </body>
 </html>

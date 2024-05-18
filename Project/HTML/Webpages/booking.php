@@ -3,7 +3,6 @@ session_start();
 
 include('connection.php');
 
-// Ensure session variables are initialized
 if (!isset($_SESSION['room_bookings'])) {
     $_SESSION['room_bookings'] = array();
 }
@@ -23,7 +22,7 @@ function sanitizeInput($data) {
     return $data;
 }
 
-// Handle form submission
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['room_category'])) {
         $room_category = sanitizeInput($_POST["room_category"]);
@@ -142,10 +141,16 @@ include('clearbooking.php');
     </form>
 
     <a href="bookingpage.php" class="button">Add Another</a>
-
+    
+    <?php 
+    if(!empty($_SESSION['room_bookings'])){
+    ?>
     <form action="finalizebooking.php" method="POST">
         <button type="submit" name="finalize_booking" class="button" style="height: 100px; background-color:brown">Finalize Booking</button>
     </form>
+    <?php
+    }
+    ?>
 
 </body>
 </html>
