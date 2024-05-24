@@ -95,7 +95,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $stmt->close();
     }
-    echo $error_message;
+    else{
+        echo $error_message;
+    }
 }
 
 // Clear booking logic
