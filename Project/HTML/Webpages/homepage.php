@@ -18,8 +18,7 @@
     </a>
     <hr>
 
-    <!-- if logged in, gets username from email by calling "username.php" 
-    might be unnecessarily convoluted; might remove-->
+    <!-- if logged in, gets username from email by calling "username.php" -->
     <?php
         if(isset($_SESSION['uid'])){ 
     ?> 
@@ -51,7 +50,7 @@
             <?php
             // Check if the user is logged in
             if(isset($_SESSION['uid'])) {
-                // User is logged in, show logout button
+                // User is logged in, show booking button
             ?>
                 <form action="bookingpage.php" method="POST">
                 <input type="submit" name="booking" value="Book" style="height: 30px; width: auto; position: absoulte; top: 8px; right: 16px;">
